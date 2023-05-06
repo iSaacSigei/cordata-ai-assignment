@@ -25,8 +25,7 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:
-          "Bearer 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",
+          Authorization:"Bearer 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",
         },
         body: JSON.stringify({
           prompt: `Generate a business name for an ${inputValue}`,
@@ -43,8 +42,7 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:
-          "Bearer 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",
+          Authorization:"Bearer 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",
         },
         body: JSON.stringify({
           prompt: `Generate a tagline for an ${inputValue} business`,
@@ -63,8 +61,7 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:
-            "Bearer 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",
+          Authorization:"Bearer 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",
         },
         body: JSON.stringify({
           model: "image-alpha-001",
@@ -88,7 +85,7 @@ function App() {
         <h1 className="text-white text-2xl font-bold">Generative AI App</h1>
       </div>
       <form onSubmit={handleSubmit} className="p-1.5 mb-2">
-        <div className="mt-7 lg:flex lg:justify-around md:flex md:justify-between items-center">
+        <div className="mt-7 lg:flex lg:justify-around md:flex md:justify-around items-center">
           <div className="lg:flex mr-1.5 p-1.5">
             <label htmlFor="input" className="p-1.5">
               Enter your input:
@@ -98,7 +95,7 @@ function App() {
               onChange={(e) => setInputValue(e.target.value)}
               name="text"
               id="input"
-              className="block w-full md:w-full rounded-md border-0 py-1.5 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
+              className="block w-full sm:w-1/2 rounded-md border-0 py-1.5 px-1 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
               placeholder="Type here"
             />
           </div>
