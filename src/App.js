@@ -26,10 +26,10 @@ function App() {
         headers: {
           "Content-Type": "application/json",
           Authorization:
-            "Bearer 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",
+          "Bearer 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",
         },
         body: JSON.stringify({
-          prompt: "Generate a business name for an African hair salon",
+          prompt: `Generate a business name for an ${inputValue}`,
           max_tokens: 50,
         }),
       }
@@ -44,14 +44,15 @@ function App() {
         headers: {
           "Content-Type": "application/json",
           Authorization:
-            "Bearer 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",
+          "Bearer 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",
         },
         body: JSON.stringify({
-          prompt: "Generate a tagline for an African hair salon",
+          prompt: `Generate a tagline for an ${inputValue} business`,
           max_tokens: 50,
         }),
       }
     );
+
     const taglineData = await taglineResponse.json();
     const tagline = taglineData.choices[0].text.trim();
   
