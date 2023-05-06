@@ -25,7 +25,7 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:"Bearer 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",
+          Authorization:"Bearer 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",
         },
         body: JSON.stringify({
           prompt: `Generate a business name for an ${inputValue}`,
@@ -42,7 +42,7 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:"Bearer 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",
+          Authorization:"Bearer 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",
         },
         body: JSON.stringify({
           prompt: `Generate a tagline for an ${inputValue} business`,
@@ -61,7 +61,7 @@ function App() {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization:"Bearer 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",
+          Authorization:"Bearer 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",
         },
         body: JSON.stringify({
           model: "image-alpha-001",
